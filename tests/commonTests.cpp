@@ -144,7 +144,7 @@ SCENARIO("Ошибка! Неизвестный идентификатор"){
                   "begin"
                   "b = 5;"){
         WHEN("Проверям правильность программы вызовом функции Proceed") {
-            int exitCode = Proceed("/home/andrew/workspace/TVP/tests/12.txt");
+            int exitCode = Proceed("/home/andrew/workspace/syntax-interpreter/tests/12.txt");
             THEN("Код ошибки 10 и функция Message выдает сообщение") {
                 REQUIRE(exitCode == 10);
                 REQUIRE(Message(exitCode) == "unknown identifier");
@@ -172,7 +172,7 @@ SCENARIO("Ошибка! Ожидается ; в конце присваиван�
                   "begin"
                   "a = 5"){
         WHEN("Проверям правильность программы вызовом функции Proceed") {
-            int exitCode = Proceed("/home/andrew/workspace/TVP/tests/14.txt");
+            int exitCode = Proceed("/home/andrew/workspace/syntax-interpreter/tests/14.txt");
             THEN("Код ошибки 8 и функция Message выдает сообщение") {
                 REQUIRE(exitCode == 8);
                 REQUIRE(Message(exitCode) == "; expected");
