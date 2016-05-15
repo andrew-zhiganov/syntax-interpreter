@@ -1,0 +1,7 @@
+var a, b : integer;
+begin
+a = 5;
+b = 45;
+a = b + b;
+b = a / b;
+end

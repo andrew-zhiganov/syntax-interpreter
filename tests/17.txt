@@ -1,0 +1,5 @@
+var a, b, c : integer;
+begin
+a = (25 + 32) - b + (c + 12);
+c = -(a / 3);
+end
